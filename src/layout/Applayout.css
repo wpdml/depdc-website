@@ -1,0 +1,91 @@
+.nav-bar{
+    background-color: #3a2c5b;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.blood-title {
+    color: #ecba47;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.blood-title:hover{
+    color: rgb(240, 232, 221);
+    transition: 0.3s ease-in-out;
+}
+
+.nav-title {
+    width: 100px;
+    color: rgb(238, 233, 228);
+    font-size: 25px;
+    margin-left: 3%;
+}
+
+.nav-title:hover {
+    transition: ease 0.3s;
+    background-color: transparent;
+    color: #234f9a;
+}
+
+.nav-title:active {
+    color: rgb(184, 184, 184);
+}
+
+#nav-drop {
+    color: rgb(238, 233, 228);
+}
+
+#nav-drop:hover{
+    color: #234f9a;
+}
+
+.dropdown-menu {
+    background-color:#3a2c5b;
+    transition: ease 0.3;
+    border: white 2px dotted;
+    border-radius: 25px;
+    min-width: 320px; /* Prevents menu from becoming too small */
+    max-width: 100%; /* Ensures it doesn't overflow */
+    margin: 30px;
+}
+
+.nav-form{
+    color: #f7da4d;
+    text-decoration: underline;
+    font-size: 25px;
+    margin-left: 3%;
+}
+
+.nav-form:hover{
+    background-color: transparent;
+    color: rgb(79, 85, 198);
+    transition: ease-in-out 0.3s;
+}
+
+.custom-divider {
+    border-bottom: 2px dotted rgb(255, 255, 255);
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-side {
+    font-size: 25px;
+    margin-left: 3%;
+    color: #f7da4d;
+    width: 120px;
+}
+
+.nav-side:hover {
+    color: #234f9a;
+    transition: 0.4s ease;
+    font-weight: bold;
+}
+
+#navbar-toggler-icon {
+    color: wheat;
+}
+  
