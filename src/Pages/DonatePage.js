@@ -1,9 +1,11 @@
-import React from 'react'
+import "./Donatepage.css"
 
 const DonatePage = () => {
   return (
-    <div>
-      donate
+    <div className="donate">
+      <div className="donate-box">
+        COMING SOON!
+      </div>
     </div>
   )
 }

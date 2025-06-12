@@ -20,10 +20,6 @@ const Applayout = () => {
           </div>
 
           <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-            <Link to="/aboutus" className="nav-title" onClick={closeMenu}>
-              About us
-            </Link>
-
             <div className="dropdown-wrapper">
               <span className="nav-title dropdown-toggle">Projects ▾</span>
               <div className="dropdown-content">
@@ -35,12 +31,14 @@ const Applayout = () => {
                 </Link>
               </div>
             </div>
-
-            <Link to="/donate" className="nav-side" onClick={closeMenu}>
-              Donate
+            <Link to="/aboutus" className="nav-title" onClick={closeMenu}>
+              About us
             </Link>
             <Link to="/partners" className="nav-side" onClick={closeMenu}>
               Our partners
+            </Link>
+            <Link to="/donate" className="nav-side" onClick={closeMenu}>
+              Donate
             </Link>
           </div>
         </div>
