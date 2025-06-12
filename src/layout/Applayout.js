@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import "./Applayout.css";
+import logo from "./logo.png"
 
 const Applayout = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,8 +12,9 @@ const Applayout = () => {
     <>
       <nav className="nav-bar">
         <div className="nav-container">
-          <Link to="/" className="title">
-            Banmairoy
+          <Link to="/" className="title logo-link">
+            <img src={logo} alt="Logo" className="logo-img" />
+            Ban Mai Roy
           </Link>
 
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
