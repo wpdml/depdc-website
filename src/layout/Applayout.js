@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import "./Applayout.css";
-import logo from "./logo.png"
+import logo from "./logo.png";
 
 const Applayout = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,10 +25,14 @@ const Applayout = () => {
             <div className="dropdown-wrapper">
               <span className="nav-title dropdown-toggle">Projects ▾</span>
               <div className="dropdown-content">
-                <Link to="/letters" className="nav-title">
+                <Link to="/letters" className="nav-title" onClick={closeMenu}>
                   Raksa letters
                 </Link>
-                <Link to="/activities" className="nav-title">
+                <Link
+                  to="/activities"
+                  className="nav-title"
+                  onClick={closeMenu}
+                >
                   PYD activities camp
                 </Link>
               </div>
