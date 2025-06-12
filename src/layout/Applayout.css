@@ -150,4 +150,10 @@
   .nav-links {
     width: 150px !important;
   }
+
+  .dropdown-content {
+  padding: 0.3rem;
+  max-width:10px !important;
+}
+
 }
