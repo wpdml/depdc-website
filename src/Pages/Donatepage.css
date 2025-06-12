@@ -1,5 +1,7 @@
 .donate {
-    background-color: rgb(201, 175, 212);
+    background-image: url(./z.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 91vh;
     display: flex;
     justify-content: center;
@@ -11,10 +13,63 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgba(226, 203, 233, 0.6);
     height:40vh;
-    width: 60vh;
+    width: 70%;
     border-radius: 50px;
+    border: 2.5px dotted rgb(255, 216, 255);
+}
+
+.donate-text {
+    color: rgb(121, 51, 121);
+    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
+    animation: twinkle 1.2s infinite ease-in-out;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #f0f,
+    0 0 20px #f0f,
+    0 0 30px #c0f,
+    0 0 40px #c0f;
 }
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 10px #86c3db, 0 0 20px #ff9, 0 0 30px rgb(247, 247, 73), 0 0 40px #ff9;
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow: 0 0 5px #fff, 0 0 10px rgb(231, 72, 178), 0 0 15px #ff9, 0 0 20px #ff9;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 10px #86c3db, 0 0 20px #ff9, 0 0 30px rgb(247, 247, 73), 0 0 40px #ff9;
+  }
+}
+
+
+.particle {
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+@keyframes glitter {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+}
+
