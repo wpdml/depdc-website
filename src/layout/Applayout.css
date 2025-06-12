@@ -50,7 +50,7 @@
   text-decoration: none;
   color: #555779;
   font-weight: 500;
-  font-size: 18px; /* ← increase this to 1.2rem or more if you want it bolder */
+  font-size: 19px; /* ← increase this to 1.2rem or more if you want it bolder */
   padding-left: 20px;
 }
 
@@ -89,8 +89,7 @@
   padding: 0.5rem 1rem;
   color: #555779;
   text-decoration: none;
-    transition: color 0.4s ease-in-out;
-
+  transition: color 0.4s ease-in-out;
 }
 
 .dropdown-content a:hover {
@@ -144,5 +143,11 @@
 
   .nav-links.open {
     right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-links {
+    width: 150px !important;
   }
 }
