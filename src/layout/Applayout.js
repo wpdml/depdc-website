@@ -1,34 +1,38 @@
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Outlet } from "react-router-dom";
-import "./Applayout.css"
+import { useState } from 'react';
+import { Outlet, Link } from 'react-router-dom';
+import './Applayout.css';
 
 const Applayout = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="nav-bar">
-        <Container>
-          <Navbar.Brand href="/" className="title">banmairoy</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="/aboutus" className="nav-title"> About us</Nav.Link>
-              <NavDropdown title={<span className="nav-title"> Projects </span>} id="nav-drop">
-                <NavDropdown.Item href="/letters" className="nav-title">Raksa letters</NavDropdown.Item>
-                <NavDropdown.Item href="/activities" className="nav-title">
-                  PYD activities camp
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-            <Nav>
-              <Nav.Link href="/donate" className="nav-side">Donate</Nav.Link>
-              <Nav.Link eventKey={2} href="/partners" className="nav-side">
-                Our partners
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <nav className="nav-bar">
+        <div className="nav-container">
+          <Link to="/" className="title">banmairoy</Link>
+
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+            ☰
+          </div>
+
+          <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
+            <Link to="/aboutus" className="nav-title" onClick={closeMenu}>About us</Link>
+
+            <div className="dropdown-wrapper">
+              <span className="nav-title dropdown-toggle">Projects ▾</span>
+              <div className="dropdown-content">
+                <Link to="/letters" className="nav-title" onClick={closeMenu}>Raksa letters</Link>
+                <Link to="/activities" className="nav-title" onClick={closeMenu}>PYD activities camp</Link>
+              </div>
+            </div>
+
+            <Link to="/donate" className="nav-side" onClick={closeMenu}>Donate</Link>
+            <Link to="/partners" className="nav-side" onClick={closeMenu}>Our partners</Link>
+          </div>
+        </div>
+      </nav>
       <Outlet />
     </>
   );
