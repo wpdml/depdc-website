@@ -1,6 +1,6 @@
 /* GENERAL NAV BAR */
 .nav-bar {
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1.5rem 0;
   position: sticky;
@@ -51,7 +51,7 @@
 
 .dropdown-content {
   position: absolute;
-  top: 2.5rem;
+  top: 24px;
   left: 0;
   background-color: white;
   border: 1px solid #ddd;
