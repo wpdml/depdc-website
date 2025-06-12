@@ -152,8 +152,8 @@
   }
 
   .dropdown-content {
-  padding: 0.3rem;
-  max-width:10px !important;
-}
-
+    left: -50px;
+    padding: 0.3rem;
+    max-width: 10px !important;
+  }
 }
