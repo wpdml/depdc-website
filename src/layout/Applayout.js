@@ -11,7 +11,7 @@ const Applayout = () => {
     <>
       <nav className="nav-bar">
         <div className="nav-container">
-          <Link to="/" className="title">banmairoy</Link>
+          <Link to="/" className="title">Banmairoy</Link>
 
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             ☰

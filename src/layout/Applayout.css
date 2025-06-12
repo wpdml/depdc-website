@@ -2,7 +2,7 @@
 .nav-bar {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -12,6 +12,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  padding-left: 40px;
+  padding-right: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,8 +77,6 @@
   background-color: #f3f3f3;
 }
 
-/* ... keep everything else above the same ... */
-
 .hamburger {
   display: none;
   font-size: 1.8rem;
@@ -90,11 +90,9 @@
   color: #333;
 }
 
-/* Update this for small screen behavior */
-@media (max-width: 500px) {
+@media (max-width: 610px) {
   .hamburger {
     display: block;
-    /* Prevent hamburger from pushing layout */
     align-self: center;
   }
 
@@ -106,7 +104,7 @@
   .nav-links {
     position: fixed;
     top: 0;
-    right: -250px;
+    right: -320px;
     height: 100vh;
     width: 250px;
     background-color: #fff;
