@@ -1,54 +1,45 @@
 .donate {
-    background-image: url(./z2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 91vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #efebe7;
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .donate-box {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(226, 203, 233, 0.6);
-    height:40vh;
-    width: 70%;
-    border-radius: 50px;
-    border: 2.5px dotted rgb(255, 216, 255);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 70%;
 }
 
 .donate-text {
-    color: rgb(121, 51, 121);
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    animation: twinkle 1.2s infinite ease-in-out;
-    text-shadow:
-    0 0 5px #fff,
-    0 0 10px #f0f,
-    0 0 20px #f0f,
-    0 0 30px #c0f,
-    0 0 40px #c0f;
+  padding: 50px;
+  gap: 20px;
+  color: rgb(49, 21, 49);
+  font-size: 30px;
+  font-family: monospace;
 }
 
 @keyframes twinkle {
   0% {
     opacity: 1;
-    text-shadow: 0 0 10px #86c3db, 0 0 20px #ff9, 0 0 30px rgb(247, 247, 73), 0 0 40px #ff9;
+    text-shadow: 0 0 10px #86c3db, 0 0 20px #ff9, 0 0 30px rgb(247, 247, 73),
+      0 0 40px #ff9;
   }
   50% {
     opacity: 0.5;
-    text-shadow: 0 0 5px #fff, 0 0 10px rgb(231, 72, 178), 0 0 15px #ff9, 0 0 20px #ff9;
+    text-shadow: 0 0 5px #fff, 0 0 10px rgb(231, 72, 178), 0 0 15px #ff9,
+      0 0 20px #ff9;
   }
   100% {
     opacity: 1;
-    text-shadow: 0 0 10px #86c3db, 0 0 20px #ff9, 0 0 30px rgb(247, 247, 73), 0 0 40px #ff9;
+    text-shadow: 0 0 10px #86c3db, 0 0 20px #ff9, 0 0 30px rgb(247, 247, 73),
+      0 0 40px #ff9;
   }
 }
-
 
 .particle {
   position: fixed;
@@ -72,4 +63,3 @@
     opacity: 0;
   }
 }
-

@@ -40,9 +40,11 @@ const Applayout = () => {
             <Link to="/aboutus" className="nav-title" onClick={closeMenu}>
               About us
             </Link>
+            {/*
             <Link to="/partners" className="nav-side" onClick={closeMenu}>
               Our partners
             </Link>
+            */}
             <Link to="/donate" className="nav-side" onClick={closeMenu}>
               Donate
             </Link>

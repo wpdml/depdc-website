@@ -12,11 +12,23 @@
 
 .nav-bar {
   background-color: #efebe7;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1.5rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  position: relative; /* Needed for ::after positioning */
+}
+
+.nav-bar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Adjust as needed (e.g., 70% for more edge space) */
+  height: 2px;
+  background-color: #3a3c5b; /* or any color you'd like */
+  border-radius: 1px;
 }
 
 .nav-container {
@@ -48,15 +60,15 @@
 .nav-title,
 .nav-side {
   text-decoration: none;
-  color: #555779;
+  color: #3a2c5b;
   font-weight: 500;
-  font-size: 19px; /* ← increase this to 1.2rem or more if you want it bolder */
+  font-size: 20px; /* ← increase this to 1.2rem or more if you want it bolder */
   padding-left: 20px;
 }
 
 .nav-title:hover,
 .nav-side:hover {
-  color: #000;
+  color: #9fa1ce;
   transition: ease 0.3s;
 }
 
@@ -93,7 +105,7 @@
 }
 
 .dropdown-content a:hover {
-  color: #000000;
+  color: #9fa1ce;
 }
 
 .hamburger {

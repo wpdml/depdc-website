@@ -1,0 +1,90 @@
+.letter {
+  background-color: #efebe7;
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter-box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.85); /* Paper look */
+  height: 33vh;
+  width: 65%;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1.5px solid #d4c1de;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    inset 0 0 10px rgba(255, 255, 255, 0.4); /* soft glow inside */
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.letter-box::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #eac4ec,
+    #eac4ec 10px,
+    #fff 10px,
+    #fff 20px
+  );
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/**/
+
+.envelope-flap {
+  position: absolute;
+  top: 10px;
+  background-color: transparent;
+  width: 100%;
+  height: 55%;
+}
+
+.texts-box {
+  position: relative; /* Needed to contain absolutely positioned children */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.stamp {
+  position: absolute;
+  top: 40px;
+  width: 120px; /* Adjust as needed */
+  opacity: 0.3;
+  z-index: 1; /* Behind the text */
+}
+
+.letter-text {
+  color: rgb(121, 51, 121);
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  animation: twinkle 1.2s infinite ease-in-out;
+  text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #c0f,
+    0 0 40px #c0f;
+  z-index: 2;
+}
+
+.raksa-text {
+  color: #d4c1de;
+  z-index: 2;
+
+  font-size: 60px;
+  font-family: "Times New Roman", Times, serif;
+  -webkit-text-stroke: 1px rgb(150, 66, 132);
+}

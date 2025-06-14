@@ -2,8 +2,7 @@ import { useEffect } from "react";
 import "./Donatepage.css";
 
 const DonatePage = () => {
-
-    const createParticle = () => {
+  const createParticle = () => {
     const particle = document.createElement("div");
     particle.className = "particle";
     const size = Math.random() * 1.5 + 1.3;
@@ -32,7 +31,14 @@ const DonatePage = () => {
   return (
     <div className="donate">
       <div className="donate-box">
-        <div className="donate-text"> COMING SOON!</div>
+        <div className="donate-text">
+          {" "}
+          We are actively fundraising to support our initiatives and to
+          contribute to shelters that care for at-risk children. While we do not
+          yet have an official bank account, you can make a difference by
+          participating in our fundraising efforts. Visit @banmairoy. on
+          Instagram for updates and ways to get involved.
+        </div>
       </div>
     </div>
   );
