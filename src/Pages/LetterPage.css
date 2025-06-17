@@ -1,3 +1,7 @@
+body {
+  background-color: #efebe7;
+}
+
 .letter {
   background-color: #efebe7;
   height: 91vh;
@@ -7,19 +11,19 @@
 }
 
 .letter-box {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.85); /* Paper look */
-  height: 33vh;
+  aspect-ratio: 5.5 / 3;
   width: 65%;
   max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
   border-radius: 12px;
   border: 1.5px solid #d4c1de;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-    inset 0 0 10px rgba(255, 255, 255, 0.4); /* soft glow inside */
+    inset 0 0 10px rgba(255, 255, 255, 0.4);
   position: relative;
   transition: 0.3s ease;
 }
@@ -53,7 +57,7 @@
 }
 
 .texts-box {
-  position: relative; /* Needed to contain absolutely positioned children */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,9 +68,9 @@
 .stamp {
   position: absolute;
   top: 40px;
-  width: 120px; /* Adjust as needed */
+  width: 120px;
   opacity: 0.3;
-  z-index: 1; /* Behind the text */
+  z-index: 1;
 }
 
 .letter-text {

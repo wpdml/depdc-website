@@ -1,0 +1,29 @@
+.home-box {
+  display: grid;
+  grid-template-rows: auto auto; /* Top and bottom vertically aligned */
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #efebe7;
+}
+
+.top-box {
+  background-image: url(./z2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.bottom-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Horizontal */
+  gap: 1rem;
+}
+
+.item-box {
+  background-color: #d4eaff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
