@@ -14,7 +14,7 @@ const Applayout = () => {
         <div className="nav-container">
           <Link to="/" className="title logo-link">
             <img src={logo} alt="Logo" className="logo-img" />
-            Ban Mai Roy
+            BAN MAI ROY
           </Link>
 
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
@@ -23,22 +23,25 @@ const Applayout = () => {
 
           <div className={`nav-links ${menuOpen ? "open" : ""}`}>
             <div className="dropdown-wrapper">
-              <span className="nav-title dropdown-toggle">Projects ▾</span>
+              <span className="nav-title dropdown-toggle">PROJECTS ▾</span>
               <div className="dropdown-content">
                 <Link to="/letters" className="nav-title" onClick={closeMenu}>
-                  Raksa letters
+                  RAKSA LETTERS
+                </Link>
+                <Link to="/magazine" className="nav-title" onClick={closeMenu}>
+                  AMARATH MAGAZINE
                 </Link>
                 <Link
                   to="/activities"
                   className="nav-title"
                   onClick={closeMenu}
                 >
-                  PYD activities camp
+                  PYD ACTIVITIES CAMP
                 </Link>
               </div>
             </div>
             <Link to="/aboutus" className="nav-title" onClick={closeMenu}>
-              About us
+              ABOUT US
             </Link>
             {/*
             <Link to="/partners" className="nav-side" onClick={closeMenu}>
@@ -46,7 +49,7 @@ const Applayout = () => {
             </Link>
             */}
             <Link to="/donate" className="nav-side" onClick={closeMenu}>
-              Donate
+              DONATE
             </Link>
           </div>
         </div>

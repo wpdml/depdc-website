@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 const CampPage = () => {
   return (
-    <div>
+    <div className='body-box'>
       camp
     </div>
   )

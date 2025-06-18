@@ -1,3 +1,10 @@
+.body-box {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+
 .logo-link {
   display: flex;
   align-items: center;
@@ -12,11 +19,11 @@
 
 .nav-bar {
   background-color: #efebe7;
-  padding: 1.5rem 0;
+  padding: 1.5rem 15px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  position: relative; /* Needed for ::after positioning */
+  position: relative;
 }
 
 .nav-bar::after {
@@ -25,9 +32,9 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%; /* Adjust as needed (e.g., 70% for more edge space) */
+  width: 90%; 
   height: 2px;
-  background-color: #3a3c5b; /* or any color you'd like */
+  background-color: #3a3c5b; 
   border-radius: 1px;
 }
 
@@ -47,7 +54,7 @@
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'font';
   color: #3a3c5b;
 }
 
@@ -62,7 +69,7 @@
   text-decoration: none;
   color: #3a2c5b;
   font-weight: 500;
-  font-size: 20px; /* ← increase this to 1.2rem or more if you want it bolder */
+  font-size: 17px; 
   padding-left: 20px;
 }
 
@@ -78,14 +85,14 @@
 
 .dropdown-content {
   position: absolute;
-  top: 25.9px;
-  left: -65px;
+  top: 23px;
+  left: -60px;
   color: #555779;
   background-color: rgb(239, 235, 231);
   border: 1px solid #ddd;
   display: none;
   flex-direction: column;
-  min-width: 200px;
+  min-width: 220px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   z-index: 1002;
@@ -149,8 +156,8 @@
     flex-direction: column;
     transition: right 0.3s ease;
     z-index: 1001;
-    gap: 4.5rem;
-    padding-top: 7rem;
+    gap: 6rem;
+    padding-top: 9rem;
   }
 
   .nav-links.open {

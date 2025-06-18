@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./LetterPage.css";
-import orchid from "./orchid.png"
+import orchid from "./x1.jpg";
 
 const LetterPage = () => {
   const createParticle = () => {
@@ -30,25 +30,27 @@ const LetterPage = () => {
   }, []);
 
   return (
-    <div className="letter">
-      <div className="letter-box">
-        <svg
-          className="envelope-flap"
-          viewBox="0 0 100 60"
-          preserveAspectRatio="none"
-        >
-          <polygon
-            points="0,0 100,0 50,60"
-            fill="rgba(255, 255, 255, 0.7)"
-            stroke="rgb(188, 142, 197)"
-            strokeWidth="0.5"
-            strokeDasharray="2,1.5"
-          />
-        </svg>
-        <div className="texts-box">
+    <div className="body-box">
+      <div className="letter">
+        <div className="letter-box">
+          <svg
+            className="envelope-flap"
+            viewBox="0 0 100 60"
+            preserveAspectRatio="none"
+          >
+            <polygon
+              points="0,0 100,0 50,60"
+              fill="rgba(255, 255, 255, 0.7)"
+              stroke="rgb(188, 142, 197)"
+              strokeWidth="0.5"
+              strokeDasharray="2,1.5"
+            />
+          </svg>
+          <div className="texts-box">
             <img src={orchid} alt="stamp" className="stamp" />
-          <div className="raksa-text">RAKSA LETTERS</div>
-          <div className="letter-text">COMING SOON!</div>
+            <div className="raksa-text">RAKSA LETTERS</div>
+            <div className="letter-text">COMING SOON!</div>
+          </div>
         </div>
       </div>
     </div>

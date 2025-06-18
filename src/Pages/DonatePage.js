@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import "./Donatepage.css";
+import x3 from "./x3.jpg";
+import x4 from "./x4.jpg";
 
 const DonatePage = () => {
   const createParticle = () => {
@@ -29,15 +31,25 @@ const DonatePage = () => {
   }, []);
 
   return (
-    <div className="donate">
-      <div className="donate-box">
+    <div className="donate-box">
+      <div className="donate">
+        <div className="top-img">
+          <img src={x4} alt="intro" />
+        </div>
         <div className="donate-text">
-          {" "}
-          We are actively fundraising to support our initiatives and to
-          contribute to shelters that care for at-risk children. While we do not
-          yet have an official bank account, you can make a difference by
-          participating in our fundraising efforts. Visit @banmairoy. on
-          Instagram for updates and ways to get involved.
+          <p>
+            We are actively fundraising to support our initiatives and to
+            contribute to shelters that care for at-risk children. While we do
+            not yet have an official bank account, you can make a difference by
+            participating in our fundraising efforts.
+          </p>
+          <p>
+            Visit <span className="highlight">@banmairoy</span> on Instagram for
+            updates and ways to get involved.
+          </p>
+        </div>
+        <div className="bottom-img">
+          <img src={x3} alt="intro" />
         </div>
       </div>
     </div>

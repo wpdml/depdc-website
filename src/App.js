@@ -7,6 +7,7 @@ import AboutusPage from "./Pages/AboutusPage";
 import DonatePage from "./Pages/DonatePage";
 import PartnersPage from "./Pages/PartnersPage";
 import Applayout from "./layout/Applayout";
+import MagazinePage from "./Pages/MagazinePage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/aboutus" element={<AboutusPage />} />
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/partners" element={<PartnersPage />} />
+          <Route path="/magazine" element={<MagazinePage />} />
         </Route>
       </Routes>
     </div>

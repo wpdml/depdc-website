@@ -1,18 +1,31 @@
 .home-box {
+  margin-top: 1rem;
   display: grid;
   grid-template-rows: auto auto; /* Top and bottom vertically aligned */
-  gap: 1rem;
+  gap: 2rem;
   padding: 2rem;
   background-color: #efebe7;
 }
 
 .top-box {
-  background-image: url(./z2.jpg);
+  height: 230px;
+  background-image: url(./z.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1.5rem;
-  text-align: center;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns content to the bottom */
+  align-items: flex-start;
+}
+
+.top-box p {
+  color: white;
+  font-size: 27px;
+  text-align: left;
+  align-items: baseline;
+  margin: 0 0 7px 0;
 }
 
 .bottom-box {
@@ -22,8 +35,38 @@
 }
 
 .item-box {
-  background-color: #d4eaff;
-  padding: 1rem;
+  padding: 10px;
+  justify-content: center;
   text-align: center;
   border-radius: 8px;
+  background-color: grey;
+}
+
+.item-box-text {
+  padding: 1rem;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.item-box-text button {
+  margin-top: 20px;
+  font-family: "montserrat";
+  font-weight: bold;
+  background-color: rgb(149, 120, 173);
+  border: none;
+  font-size: 15px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 23px;
+  cursor: pointer;
+}
+
+.item-box-text button:hover {
+  background-color: rgb(103, 78, 122);
+  transition: 0.3s ease-in-out;
+}
+
+.item-box button:hover {
+  background-color: rgb(90, 67, 110);
+  transition: ease 0.3s;
 }
