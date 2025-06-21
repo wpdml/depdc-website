@@ -8,7 +8,7 @@ const AboutusPage = () => {
       <div className="about-box">
         <div className="intro-box">
           <div className="intro-img">
-            <img src={x} alt="intro" />
+            <img src={x} alt="intro" loading="eager"/>
           </div>
           <div className="intro-texts">
             <p className="about-title">The Ban Mai Roy Project</p>

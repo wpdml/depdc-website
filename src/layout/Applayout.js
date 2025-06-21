@@ -13,7 +13,7 @@ const Applayout = () => {
       <nav className="nav-bar">
         <div className="nav-container">
           <Link to="/" className="title logo-link">
-            <img src={logo} alt="Logo" className="logo-img" />
+            <img src={logo} alt="Logo" className="logo-img" loading="eager"/>
             BAN MAI ROY
           </Link>
 

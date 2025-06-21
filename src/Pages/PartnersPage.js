@@ -1,5 +1,6 @@
 import React from 'react'
 
+// not shown
 
 const PartnersPage = () => {
   return (

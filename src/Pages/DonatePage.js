@@ -34,7 +34,7 @@ const DonatePage = () => {
     <div className="donate-box">
       <div className="donate">
         <div className="top-img">
-          <img src={x4} alt="intro" />
+          <img src={x4} alt="intro" loading="eager"/>
         </div>
         <div className="donate-text">
           <p>
@@ -49,7 +49,7 @@ const DonatePage = () => {
           </p>
         </div>
         <div className="bottom-img">
-          <img src={x3} alt="intro" />
+          <img src={x3} alt="intro" loading="eager"/>
         </div>
       </div>
     </div>

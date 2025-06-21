@@ -47,7 +47,7 @@ const LetterPage = () => {
             />
           </svg>
           <div className="texts-box">
-            <img src={orchid} alt="stamp" className="stamp" />
+            <img src={orchid} alt="stamp" className="stamp" loading="eager"/>
             <div className="raksa-text">RAKSA LETTERS</div>
             <div className="letter-text">COMING SOON!</div>
           </div>

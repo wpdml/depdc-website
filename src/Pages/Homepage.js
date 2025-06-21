@@ -26,9 +26,9 @@ const Homepage = () => {
             </div>
             <button onClick={() => navigate('/aboutus')}>Learn more</button>
           </div>
-          <div class="item-box"><img src={y1} alt="info"/></div>
-          <div class="item-box"><img src={y2} alt="info"/></div>
-          <div class="item-box"><img src={y5} alt="info"/></div>
+          <div class="item-box"><img src={y1} alt="info" loading="eager"/></div>
+          <div class="item-box"><img src={y2} alt="info" loading="eager"/></div>
+          <div class="item-box"><img src={y5} alt="info" loading="eager"/></div>
         </div>
       </div>
     </div>

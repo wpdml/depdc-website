@@ -1,0 +1,89 @@
+.magazine {
+  background-color: #efebe7;
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.magazine-box {
+  display: flex;
+  width: 70%;
+  max-width: 900px;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(to right, #fff 49.5%, #ddd 50%, #fff 50.5%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15),
+              inset 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #cfcfcf;
+  transition: transform 0.3s ease;
+}
+
+.page {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.left-page {
+  background-color: #fdf9f9;
+}
+
+.right-page {
+  background-color: #e0dae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mag-title {
+  font-size: 36px;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  color: #6e3c73;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.mag-sub {
+  font-size: 18px;
+  color: #7b607f;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.coming-text {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #a55ca5;
+  text-shadow: 0 0 5px #fff, 0 0 8px #d0b0d0;
+  animation: twinkle 1.5s ease-in-out infinite;
+}
+
+/* Optional animation reuse */
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 10px #dcb9e1, 0 0 20px rgb(233, 176, 233), 0 0 30px rgb(204, 94, 238);
+  }
+  50% {
+    opacity: 0.6;
+    text-shadow: 0 0 5px #fff, 0 0 15px #e5bde5;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 10px #dcb9e1, 0 0 20px rgb(233, 176, 233), 0 0 30px rgb(204, 94, 238);
+  }
+}
+
+.magazine-sticker{
+    width: 100%;
+    margin-bottom: 20px;
+}
