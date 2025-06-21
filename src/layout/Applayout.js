@@ -29,7 +29,7 @@ const Applayout = () => {
                   RAKSA LETTERS
                 </Link>
                 <Link to="/magazine" className="nav-title" onClick={closeMenu}>
-                  AMARATH MAGAZINE
+                  AMARANTH MAGAZINE
                 </Link>
                 <Link
                   to="/activities"

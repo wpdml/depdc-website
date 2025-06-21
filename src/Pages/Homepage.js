@@ -1,6 +1,11 @@
 import React from "react";
 import "./Homepage.css";
 import { useNavigate } from "react-router-dom";
+import y1 from './y1.jpg'
+import y2 from './y2.jpg'
+import y3 from './y3.jpg'
+import y4 from './y4.jpg'
+import y5 from './y5.jpg'
 
 const Homepage = () => {
   const navigate = useNavigate();
@@ -23,9 +28,9 @@ const Homepage = () => {
             </div>
             <button onClick={() => navigate('/aboutus')}>Learn more</button>
           </div>
-          <div class="item-box">image</div>
-          <div class="item-box">image</div>
-          <div class="item-box">image</div>
+          <div class="item-box"><img src={y1} alt="info"/></div>
+          <div class="item-box"><img src={y2} alt="info"/></div>
+          <div class="item-box"><img src={y5} alt="info"/></div>
         </div>
       </div>
     </div>
