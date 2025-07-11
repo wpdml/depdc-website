@@ -7,9 +7,20 @@ const CampPage = () => {
   return (
     <div className="body-box">
       <div className="article-section">
+        <div className="note-box">
+          <p>❀</p>
+          <p>
+            Our activity camp is focused on empowering marginalized youth at
+            risk of human trafficking through a collaborative, cross-cultural
+            exchange program that combines education, peer advocacy, and
+            community-building initiatives.
+          </p>
+          <p>❀</p>
+        </div>
+
         <div className="article-box left">
           <div className="image-placeholder">
-            <img src={y4} alt="stamp" className="camp-img" loading="eager"/>
+            <img src={y4} alt="stamp" className="camp-img" loading="eager" />
           </div>
           <div className="article-text">
             <h2>2025 PYD activity camp</h2>
@@ -27,7 +38,7 @@ const CampPage = () => {
 
         <div className="article-box right">
           <div className="image-placeholder">
-            <img src={y3} alt="stamp" className="camp-img" loading="eager"/>
+            <img src={y3} alt="stamp" className="camp-img" loading="eager" />
           </div>
           <div className="article-text">
             <h2>Our vision for the activity camp</h2>

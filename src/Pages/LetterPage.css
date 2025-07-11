@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1.5px solid #d4c1de;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
     inset 0 0 10px rgba(255, 255, 255, 0.4);
@@ -33,8 +33,8 @@
   height: 10px;
   background: repeating-linear-gradient(
     -45deg,
-    #eac4ec,
-    #eac4ec 10px,
+    #bdaabe,
+    #f0d2f1 10px,
     #fff 10px,
     #fff 20px
   );
@@ -70,12 +70,12 @@
 }
 
 .letter-text {
-  color: rgb(121, 51, 121);
+  color: rgb(161, 118, 161);
   font-weight: bold;
   font-size: 40px;
   animation: twinkle 1.2s infinite ease-in-out;
-  text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #c0f,
-    0 0 40px #c0f;
+  text-shadow: 0 0 5px #fff, 0 0 10px rgb(179, 131, 179), 0 0 20px #f0f, 0 0 30px #c0f,
+    0 0 40px rgb(154, 105, 167);
   z-index: 2;
 }
 
@@ -87,3 +87,5 @@
   font-family: "Times New Roman", Times, serif;
   -webkit-text-stroke: 1px rgb(150, 66, 132);
 }
+
+

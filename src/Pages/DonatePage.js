@@ -34,7 +34,7 @@ const DonatePage = () => {
     <div className="donate-box">
       <div className="donate">
         <div className="top-img">
-          <img src={x4} alt="intro" loading="eager"/>
+          <img src={x4} alt="intro" loading="eager" />
         </div>
         <div className="donate-text">
           <p>
@@ -44,12 +44,20 @@ const DonatePage = () => {
             participating in our fundraising efforts.
           </p>
           <p>
-            Visit <span className="highlight">@banmairoy</span> on Instagram for
-            updates and ways to get involved.
+            Visit{" "}
+            <a
+              href="https://www.instagram.com/banmairoy/"
+              className="highlight"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @banmairoy
+            </a>{" "}
+            on Instagram for updates and ways to get involved.
           </p>
         </div>
         <div className="bottom-img">
-          <img src={x3} alt="intro" loading="eager"/>
+          <img src={x3} alt="intro" loading="eager" />
         </div>
       </div>
     </div>

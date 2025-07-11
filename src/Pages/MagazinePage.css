@@ -71,7 +71,7 @@
 @keyframes twinkle {
   0% {
     opacity: 1;
-    text-shadow: 0 0 10px #dcb9e1, 0 0 20px rgb(233, 176, 233), 0 0 30px rgb(204, 94, 238);
+    text-shadow: 0 0 10px #dcb9e1, 0 0 20px rgb(233, 176, 233), 0 0 30px rgb(174, 117, 192);
   }
   50% {
     opacity: 0.6;
@@ -79,7 +79,7 @@
   }
   100% {
     opacity: 1;
-    text-shadow: 0 0 10px #dcb9e1, 0 0 20px rgb(233, 176, 233), 0 0 30px rgb(204, 94, 238);
+    text-shadow: 0 0 10px #dcb9e1, 0 0 20px rgb(233, 176, 233), 0 0 30px rgb(174, 117, 192);
   }
 }
 
