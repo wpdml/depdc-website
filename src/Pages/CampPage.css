@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   background-color: transparent;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(9, 3, 1, .2);
@@ -25,7 +25,7 @@
   max-width: 700px;
   margin: 2rem auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat';
   color: #444;
 }
 
@@ -33,7 +33,7 @@
 .note-box p:last-child {
   font-size: 1.5rem;
   margin: 0.5rem 0;
-  color: #e295b5;
+  color: #a381b6;
 }
 
 .note-box p:nth-child(2) {
@@ -93,9 +93,50 @@
   cursor: pointer;
   font-weight: bold;
   font-family: 'Montserrat';
+  text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .read-more:hover {
   background-color: #73507e;
   transition: 0.3s ease;
+}
+
+@media (max-width: 650px) {
+  .article-box {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+
+  .image-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto;
+  }
+
+  .article-text {
+    width: 100%;
+  }
+
+  .article-text h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .article-text p:nth-of-type(2) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+
+  .read-more {
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
 }

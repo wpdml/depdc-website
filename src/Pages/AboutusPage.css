@@ -39,7 +39,8 @@
 .contact-box {
   display: flex;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
 }
 
 .contact-left {
@@ -48,7 +49,7 @@
 }
 
 .contact-right {
-  margin-top: 40px;
+  margin-top: 80px;
   margin-left: 10px;
   flex: 1;
   display: flex;
@@ -115,4 +116,36 @@
 
 .about-bold{
   font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .intro-box {
+    flex-direction: column;
+  }
+
+  .intro-img {
+    width: 100%;
+  }
+
+  .about-info {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-right button {
+    width: 50%;
+    align-self: center;
+  }
 }

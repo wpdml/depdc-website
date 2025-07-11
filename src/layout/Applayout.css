@@ -164,7 +164,13 @@
 
   .dropdown-content {
     left: -50px;
-    padding: 0.3rem;
+    padding: 1rem 0.5rem;
     max-width: 10px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .title{
+    font-size: 26px;
   }
 }

@@ -24,7 +24,7 @@ const Homepage = () => {
               connection. We aim to create safe spaces where young people can
               grow, express themselves, and build a sense of belonging
             </div>
-            <button onClick={() => navigate('/aboutus')}>Learn more</button>
+            <button onClick={() => navigate('/aboutus')}>Learn more ➜</button>
           </div>
           <div class="item-box"><img src={y1} alt="info" loading="eager"/></div>
           <div class="item-box"><img src={y2} alt="info" loading="eager"/></div>

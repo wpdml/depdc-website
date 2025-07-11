@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./LetterPage.css";
 import orchid from "./x1.jpg";
 
+
 const LetterPage = () => {
   const createParticle = () => {
     const particle = document.createElement("div");

@@ -8,6 +8,8 @@ import DonatePage from "./Pages/DonatePage";
 import PartnersPage from "./Pages/PartnersPage";
 import Applayout from "./layout/Applayout";
 import MagazinePage from "./Pages/MagazinePage";
+import ArticlePage1 from "./Articlepages/ArticlePage1";
+import ArticlePage2 from "./Articlepages/ArticlePage2";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path="/letters" element={<LetterPage />} />
           <Route path="/activities" element={<CampPage />} />
+          <Route path="/activities/article1" element={<ArticlePage1 />} />
+          <Route path="/activities/article2" element={<ArticlePage2 />} />
           <Route path="/aboutus" element={<AboutusPage />} />
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/partners" element={<PartnersPage />} />

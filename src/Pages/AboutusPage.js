@@ -73,10 +73,9 @@ const AboutusPage = () => {
               Please fill out the form below to send us an email.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Thank you for being here ♡ Whether you follow
+              along, volunteer, or just read and care. We’re glad you’re with
+              us!
             </p>
             <p className="contact-info">E-mail:</p>
             <p>reachbanmairoy@gmail.com</p>

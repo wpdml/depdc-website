@@ -2,6 +2,7 @@ import React from "react";
 import "./CampPage.css";
 import y4 from "./y4.jpg";
 import y3 from "./y3.jpg";
+import { Link } from "react-router-dom";
 
 const CampPage = () => {
   return (
@@ -32,7 +33,9 @@ const CampPage = () => {
               range of activities that encouraged social connection, sparked
               curiosity, and most importantly, were lots of fun!
             </p>
-            <button className="read-more">Read More</button>
+            <Link to="/activities/article1" className="read-more">
+              Read More ➜
+            </Link>
           </div>
         </div>
 
@@ -49,7 +52,9 @@ const CampPage = () => {
               that build trust, confidence, and community. We aim to sustain and
               grow this initiative to create lasting impact.
             </p>
-            <button className="read-more">Read More</button>
+            <Link to="/activities/article2" className="read-more">
+              Read More ➜
+            </Link>{" "}
           </div>
         </div>
       </div>

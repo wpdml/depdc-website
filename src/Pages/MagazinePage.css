@@ -10,10 +10,9 @@
   display: flex;
   width: 70%;
   max-width: 900px;
-  aspect-ratio: 4 / 3;
+  height: 55%;
   background: linear-gradient(to right, #fff 49.5%, #ddd 50%, #fff 50.5%);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15),
-              inset 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   overflow: hidden;
   position: relative;
@@ -44,7 +43,7 @@
 
 .mag-title {
   font-size: 36px;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-weight: bold;
   color: #6e3c73;
   text-align: left;
@@ -61,7 +60,7 @@
 .coming-text {
   font-size: 28px;
   font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #a55ca5;
   text-shadow: 0 0 5px #fff, 0 0 8px #d0b0d0;
   animation: twinkle 1.5s ease-in-out infinite;
@@ -71,7 +70,8 @@
 @keyframes twinkle {
   0% {
     opacity: 1;
-    text-shadow: 0 0 10px #dcb9e1, 0 0 20px rgb(233, 176, 233), 0 0 30px rgb(174, 117, 192);
+    text-shadow: 0 0 10px #dcb9e1, 0 0 20px rgb(233, 176, 233),
+      0 0 30px rgb(174, 117, 192);
   }
   50% {
     opacity: 0.6;
@@ -79,11 +79,55 @@
   }
   100% {
     opacity: 1;
-    text-shadow: 0 0 10px #dcb9e1, 0 0 20px rgb(233, 176, 233), 0 0 30px rgb(174, 117, 192);
+    text-shadow: 0 0 10px #dcb9e1, 0 0 20px rgb(233, 176, 233),
+      0 0 30px rgb(174, 117, 192);
   }
 }
 
-.magazine-sticker{
+.magazine-sticker {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .magazine-box {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    top: -50px;
+  }
+
+  .page {
     width: 100%;
-    margin-bottom: 20px;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .mag-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .mag-sub {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .left-page {
+    padding: 20px 0;
+  }
+  .right-page {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .coming-text {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .magazine-sticker {
+    width: 80%;
+    margin: 0 auto 15px;
+  }
 }
