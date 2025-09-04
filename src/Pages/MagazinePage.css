@@ -10,7 +10,7 @@
   display: flex;
   width: 70%;
   max-width: 900px;
-  height: 55%;
+  height: 65%;
   background: linear-gradient(to right, #fff 49.5%, #ddd 50%, #fff 50.5%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
@@ -130,4 +130,36 @@
     width: 80%;
     margin: 0 auto 15px;
   }
+}
+
+.magazine-flip {
+  padding: 50px;
+  height: 90vh;
+  margin-bottom: 80px;
+}
+
+.magazine-flip iframe {
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.first-issue {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  color: #7b607f;
+  font-weight: bold;
+}
+
+.issue-soon{
+  text-align: center;
+  margin: 150px 90px;
+  color: white;
+  font-weight: bold;
+  border-radius: 500px;
+  font-size: 23px;
+  background-color: #c2abc5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: dotted 3px rgb(238, 202, 238);
 }
